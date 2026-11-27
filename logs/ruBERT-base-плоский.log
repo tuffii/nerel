@@ -1,0 +1,100 @@
+[1;91mE-001h rocSHMEM[0m Could not open libnuma. Returning	[90mNUMAWrapper@src/gda/numa_wrapper.cpp:48[0m
+Some weights of the model checkpoint at DeepPavlov/rubert-base-cased were not used when initializing BertModel: ['cls.predictions.bias', 'cls.predictions.decoder.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+GPU: AMD Radeon RX 6900 XT
+Model: DeepPavlov/rubert-base-cased
+Levels: 3 ('внешний', 'внутри', 'глубже')
+Annotation mode: flat
+
+[TRAIN] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 35287
+  token_unaligned: 2
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 44740
+  selected_entities: 35289
+  within_level_removed: 9451
+  token_aligned: 35287
+  discontinuous: 127
+
+[DEV] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 4439
+  token_unaligned: 0
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 5583
+  selected_entities: 4439
+  within_level_removed: 1144
+  token_aligned: 4439
+  discontinuous: 7
+
+[TEST] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 4613
+  token_unaligned: 0
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 5810
+  selected_entities: 4613
+  within_level_removed: 1197
+  token_aligned: 4613
+  discontinuous: 17
+
+[TRAIN] windows: 1276
+[TRAIN] entities fully present in >=1 window: 35287
+[TRAIN] entities not fully present in any window: 0
+Epoch 1 DEV: P=0.2286 R=0.1329 F1=0.1681 macro-F1=0.0129
+  lvl_0: F1=0.1681 P=0.2286 R=0.1329
+Epoch 1/12: loss=1.70372 dev_F1=0.1681
+Saved best checkpoint at epoch 1 (dev F1=0.1681)
+Epoch 2 DEV: P=0.6627 R=0.6709 F1=0.6667 macro-F1=0.2736
+  lvl_0: F1=0.6667 P=0.6627 R=0.6709
+Epoch 2/12: loss=0.32831 dev_F1=0.6667
+Saved best checkpoint at epoch 2 (dev F1=0.6667)
+Epoch 3 DEV: P=0.7084 R=0.7581 F1=0.7324 macro-F1=0.4162
+  lvl_0: F1=0.7324 P=0.7084 R=0.7581
+Epoch 3/12: loss=0.15714 dev_F1=0.7324
+Saved best checkpoint at epoch 3 (dev F1=0.7324)
+Epoch 4 DEV: P=0.7301 R=0.7855 F1=0.7568 macro-F1=0.5036
+  lvl_0: F1=0.7568 P=0.7301 R=0.7855
+Epoch 4/12: loss=0.10022 dev_F1=0.7568
+Saved best checkpoint at epoch 4 (dev F1=0.7568)
+Epoch 5 DEV: P=0.7543 R=0.8085 F1=0.7805 macro-F1=0.5807
+  lvl_0: F1=0.7805 P=0.7543 R=0.8085
+Epoch 5/12: loss=0.07043 dev_F1=0.7805
+Saved best checkpoint at epoch 5 (dev F1=0.7805)
+Epoch 6 DEV: P=0.7604 R=0.8123 F1=0.7855 macro-F1=0.6036
+  lvl_0: F1=0.7855 P=0.7604 R=0.8123
+Epoch 6/12: loss=0.05460 dev_F1=0.7855
+Saved best checkpoint at epoch 6 (dev F1=0.7855)
+Epoch 7 DEV: P=0.7555 R=0.8164 F1=0.7848 macro-F1=0.6171
+  lvl_0: F1=0.7848 P=0.7555 R=0.8164
+Epoch 7/12: loss=0.04343 dev_F1=0.7848
+Epoch 8 DEV: P=0.7598 R=0.8218 F1=0.7896 macro-F1=0.6380
+  lvl_0: F1=0.7896 P=0.7598 R=0.8218
+Epoch 8/12: loss=0.03605 dev_F1=0.7896
+Saved best checkpoint at epoch 8 (dev F1=0.7896)
+Epoch 9 DEV: P=0.7624 R=0.8218 F1=0.7910 macro-F1=0.6313
+  lvl_0: F1=0.7910 P=0.7624 R=0.8218
+Epoch 9/12: loss=0.03084 dev_F1=0.7910
+Saved best checkpoint at epoch 9 (dev F1=0.7910)
+Epoch 10 DEV: P=0.7669 R=0.8220 F1=0.7935 macro-F1=0.6347
+  lvl_0: F1=0.7935 P=0.7669 R=0.8220
+Epoch 10/12: loss=0.02750 dev_F1=0.7935
+Saved best checkpoint at epoch 10 (dev F1=0.7935)
+Epoch 11 DEV: P=0.7617 R=0.8196 F1=0.7896 macro-F1=0.6372
+  lvl_0: F1=0.7896 P=0.7617 R=0.8196
+Epoch 11/12: loss=0.02540 dev_F1=0.7896
+Epoch 12 DEV: P=0.7627 R=0.8205 F1=0.7905 macro-F1=0.6358
+  lvl_0: F1=0.7905 P=0.7627 R=0.8205
+Epoch 12/12: loss=0.02399 dev_F1=0.7905
+
+Best epoch: 10; best DEV F1: 0.7935
+Best macro epoch: 8; best DEV macro F1: 0.6380
+Optimizer updates: 1915; skipped due to AMP overflow: 5
+
+TEST EVALUATION SKIPPED
+Checkpoint: /home/tuffi/Projects/nerel/checkpoints/ruBERT-base-плоский

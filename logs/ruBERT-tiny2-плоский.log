@@ -1,0 +1,101 @@
+[1;91mE-001h rocSHMEM[0m Could not open libnuma. Returning	[90mNUMAWrapper@src/gda/numa_wrapper.cpp:48[0m
+Token indices sequence length is longer than the specified maximum sequence length for this model (2392 > 2048). Running this sequence through the model will result in indexing errors
+GPU: AMD Radeon RX 6900 XT
+Model: cointegrated/rubert-tiny2
+Levels: 3 ('внешний', 'внутри', 'глубже')
+Annotation mode: flat
+
+[TRAIN] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 35287
+  token_unaligned: 2
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 44740
+  selected_entities: 35289
+  within_level_removed: 9451
+  token_aligned: 35287
+  discontinuous: 127
+
+[DEV] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 4439
+  token_unaligned: 0
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 5583
+  selected_entities: 4439
+  within_level_removed: 1144
+  token_aligned: 4439
+  discontinuous: 7
+
+[TEST] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 4613
+  token_unaligned: 0
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 5810
+  selected_entities: 4613
+  within_level_removed: 1197
+  token_aligned: 4613
+  discontinuous: 17
+
+[TRAIN] windows: 1336
+[TRAIN] entities fully present in >=1 window: 35287
+[TRAIN] entities not fully present in any window: 0
+Epoch 1 DEV: P=0.0000 R=0.0000 F1=0.0000 macro-F1=0.0000
+  lvl_0: F1=0.0000 P=0.0000 R=0.0000
+Epoch 1/12: loss=3.02429 dev_F1=0.0000
+Saved best checkpoint at epoch 1 (dev F1=0.0000)
+Epoch 2 DEV: P=0.1592 R=0.0376 F1=0.0609 macro-F1=0.0060
+  lvl_0: F1=0.0609 P=0.1592 R=0.0376
+Epoch 2/12: loss=0.97108 dev_F1=0.0609
+Saved best checkpoint at epoch 2 (dev F1=0.0609)
+Epoch 3 DEV: P=0.1572 R=0.1167 F1=0.1339 macro-F1=0.0102
+  lvl_0: F1=0.1339 P=0.1572 R=0.1167
+Epoch 3/12: loss=0.59503 dev_F1=0.1339
+Saved best checkpoint at epoch 3 (dev F1=0.1339)
+Epoch 4 DEV: P=0.2961 R=0.2410 F1=0.2657 macro-F1=0.0394
+  lvl_0: F1=0.2657 P=0.2961 R=0.2410
+Epoch 4/12: loss=0.49341 dev_F1=0.2657
+Saved best checkpoint at epoch 4 (dev F1=0.2657)
+Epoch 5 DEV: P=0.3207 R=0.3194 F1=0.3201 macro-F1=0.0484
+  lvl_0: F1=0.3201 P=0.3207 R=0.3194
+Epoch 5/12: loss=0.43006 dev_F1=0.3201
+Saved best checkpoint at epoch 5 (dev F1=0.3201)
+Epoch 6 DEV: P=0.3154 R=0.3393 F1=0.3269 macro-F1=0.0535
+  lvl_0: F1=0.3269 P=0.3154 R=0.3393
+Epoch 6/12: loss=0.38863 dev_F1=0.3269
+Saved best checkpoint at epoch 6 (dev F1=0.3269)
+Epoch 7 DEV: P=0.3498 R=0.3807 F1=0.3646 macro-F1=0.0863
+  lvl_0: F1=0.3646 P=0.3498 R=0.3807
+Epoch 7/12: loss=0.35782 dev_F1=0.3646
+Saved best checkpoint at epoch 7 (dev F1=0.3646)
+Epoch 8 DEV: P=0.3795 R=0.4350 F1=0.4054 macro-F1=0.1107
+  lvl_0: F1=0.4054 P=0.3795 R=0.4350
+Epoch 8/12: loss=0.33566 dev_F1=0.4054
+Saved best checkpoint at epoch 8 (dev F1=0.4054)
+Epoch 9 DEV: P=0.3925 R=0.4510 F1=0.4198 macro-F1=0.1166
+  lvl_0: F1=0.4198 P=0.3925 R=0.4510
+Epoch 9/12: loss=0.31963 dev_F1=0.4198
+Saved best checkpoint at epoch 9 (dev F1=0.4198)
+Epoch 10 DEV: P=0.4008 R=0.4641 F1=0.4301 macro-F1=0.1213
+  lvl_0: F1=0.4301 P=0.4008 R=0.4641
+Epoch 10/12: loss=0.30828 dev_F1=0.4301
+Saved best checkpoint at epoch 10 (dev F1=0.4301)
+Epoch 11 DEV: P=0.3999 R=0.4711 F1=0.4326 macro-F1=0.1225
+  lvl_0: F1=0.4326 P=0.3999 R=0.4711
+Epoch 11/12: loss=0.30116 dev_F1=0.4326
+Saved best checkpoint at epoch 11 (dev F1=0.4326)
+Epoch 12 DEV: P=0.3996 R=0.4733 F1=0.4333 macro-F1=0.1228
+  lvl_0: F1=0.4333 P=0.3996 R=0.4733
+Epoch 12/12: loss=0.29759 dev_F1=0.4333
+Saved best checkpoint at epoch 12 (dev F1=0.4333)
+
+Best epoch: 12; best DEV F1: 0.4333
+Best macro epoch: 12; best DEV macro F1: 0.1228
+Optimizer updates: 2004; skipped due to AMP overflow: 0
+
+TEST EVALUATION SKIPPED
+Checkpoint: /home/tuffi/Projects/nerel/checkpoints/ruBERT-tiny2-плоский

@@ -1,0 +1,1 @@
+ruBERT-tiny2 плоский, lr 1e-04, batch 16

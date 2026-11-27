@@ -1,0 +1,2055 @@
+{
+  "checkpoint": "/home/tuffi/Projects/nerel/checkpoints/base-flat-seed46",
+  "display_name": "ruBERT-base плоский, seed 46",
+  "split": "test",
+  "annotation_mode": "nested",
+  "preprocessing": {
+    "annotation_mode": "nested",
+    "level_0_aligned": 4613,
+    "token_unaligned": 0,
+    "level_1_aligned": 984,
+    "level_2_aligned": 180,
+    "continuous_input": 5810,
+    "selected_entities": 5777,
+    "within_level_removed": 33,
+    "token_aligned": 5777,
+    "discontinuous": 17
+  },
+  "strict": {
+    "precision": 0.7965517241379311,
+    "recall": 0.6797645836939588,
+    "f1": 0.733538806388344,
+    "tp": 3927,
+    "fp": 1003,
+    "fn": 1850,
+    "macro_f1": 0.5989649409715067,
+    "weighted_f1": 0.7289722004134803,
+    "gold_entities": 5777,
+    "predicted_entities": 4930
+  },
+  "relaxed_overlap": {
+    "precision": 0.8608519269776876,
+    "recall": 0.7346373550285615,
+    "f1": 0.792752404968712,
+    "tp": 4244,
+    "fp": 686,
+    "fn": 1533
+  },
+  "same_start": {
+    "precision": 0.8352941176470589,
+    "recall": 0.7128267266747447,
+    "f1": 0.7692164004856636,
+    "tp": 4118,
+    "fp": 812,
+    "fn": 1659
+  },
+  "same_end": {
+    "precision": 0.8255578093306288,
+    "recall": 0.7045179158732906,
+    "f1": 0.7602503035397403,
+    "tp": 4070,
+    "fp": 860,
+    "fn": 1707
+  },
+  "bootstrap": {
+    "draws": 1000,
+    "strict_f1": {
+      "mean": 0.7338739279299166,
+      "low": 0.7172151177197258,
+      "high": 0.7525654399574747
+    },
+    "strict_macro_f1": {
+      "mean": 0.5982560620044246,
+      "low": 0.5704398546992793,
+      "high": 0.627102110967926
+    },
+    "relaxed_f1": {
+      "mean": 0.7929823621410527,
+      "low": 0.7779172852696197,
+      "high": 0.8087591072858471
+    }
+  },
+  "per_type": {
+    "AGE": {
+      "precision": 0.8613138686131386,
+      "recall": 0.855072463768116,
+      "f1": 0.8581818181818183,
+      "tp": 118,
+      "fp": 19,
+      "fn": 20,
+      "support": 138
+    },
+    "AWARD": {
+      "precision": 0.7272727272727273,
+      "recall": 0.6050420168067226,
+      "f1": 0.6605504587155964,
+      "tp": 72,
+      "fp": 27,
+      "fn": 47,
+      "support": 119
+    },
+    "CITY": {
+      "precision": 0.9132653061224489,
+      "recall": 0.7489539748953975,
+      "f1": 0.8229885057471265,
+      "tp": 179,
+      "fp": 17,
+      "fn": 60,
+      "support": 239
+    },
+    "COUNTRY": {
+      "precision": 0.9330708661417323,
+      "recall": 0.5302013422818792,
+      "f1": 0.6761768901569186,
+      "tp": 237,
+      "fp": 17,
+      "fn": 210,
+      "support": 447
+    },
+    "CRIME": {
+      "precision": 0.46551724137931033,
+      "recall": 0.7714285714285715,
+      "f1": 0.5806451612903226,
+      "tp": 27,
+      "fp": 31,
+      "fn": 8,
+      "support": 35
+    },
+    "DATE": {
+      "precision": 0.8576998050682261,
+      "recall": 0.8413001912045889,
+      "f1": 0.8494208494208494,
+      "tp": 440,
+      "fp": 73,
+      "fn": 83,
+      "support": 523
+    },
+    "DISEASE": {
+      "precision": 0.6428571428571429,
+      "recall": 0.631578947368421,
+      "f1": 0.6371681415929203,
+      "tp": 36,
+      "fp": 20,
+      "fn": 21,
+      "support": 57
+    },
+    "DISTRICT": {
+      "precision": 0.25,
+      "recall": 0.08,
+      "f1": 0.12121212121212122,
+      "tp": 2,
+      "fp": 6,
+      "fn": 23,
+      "support": 25
+    },
+    "EVENT": {
+      "precision": 0.579172610556348,
+      "recall": 0.5988200589970502,
+      "f1": 0.5888324873096447,
+      "tp": 406,
+      "fp": 295,
+      "fn": 272,
+      "support": 678
+    },
+    "FACILITY": {
+      "precision": 0.6,
+      "recall": 0.65625,
+      "f1": 0.626865671641791,
+      "tp": 42,
+      "fp": 28,
+      "fn": 22,
+      "support": 64
+    },
+    "FAMILY": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "support": 14
+    },
+    "IDEOLOGY": {
+      "precision": 0.6,
+      "recall": 0.2857142857142857,
+      "f1": 0.3870967741935483,
+      "tp": 12,
+      "fp": 8,
+      "fn": 30,
+      "support": 42
+    },
+    "LANGUAGE": {
+      "precision": 0.8,
+      "recall": 0.5,
+      "f1": 0.6153846153846154,
+      "tp": 4,
+      "fp": 1,
+      "fn": 4,
+      "support": 8
+    },
+    "LAW": {
+      "precision": 0.5166666666666667,
+      "recall": 0.543859649122807,
+      "f1": 0.52991452991453,
+      "tp": 31,
+      "fp": 29,
+      "fn": 26,
+      "support": 57
+    },
+    "LOCATION": {
+      "precision": 0.6,
+      "recall": 0.29508196721311475,
+      "f1": 0.3956043956043956,
+      "tp": 18,
+      "fp": 12,
+      "fn": 43,
+      "support": 61
+    },
+    "MONEY": {
+      "precision": 0.6578947368421053,
+      "recall": 0.5813953488372093,
+      "f1": 0.6172839506172839,
+      "tp": 25,
+      "fp": 13,
+      "fn": 18,
+      "support": 43
+    },
+    "NATIONALITY": {
+      "precision": 0.5576923076923077,
+      "recall": 0.8787878787878788,
+      "f1": 0.6823529411764707,
+      "tp": 58,
+      "fp": 46,
+      "fn": 8,
+      "support": 66
+    },
+    "NUMBER": {
+      "precision": 0.8820224719101124,
+      "recall": 0.6826086956521739,
+      "f1": 0.7696078431372549,
+      "tp": 157,
+      "fp": 21,
+      "fn": 73,
+      "support": 230
+    },
+    "ORDINAL": {
+      "precision": 0.9545454545454546,
+      "recall": 0.6,
+      "f1": 0.7368421052631579,
+      "tp": 63,
+      "fp": 3,
+      "fn": 42,
+      "support": 105
+    },
+    "ORGANIZATION": {
+      "precision": 0.8096280087527352,
+      "recall": 0.5530642750373692,
+      "f1": 0.6571936056838366,
+      "tp": 370,
+      "fp": 87,
+      "fn": 299,
+      "support": 669
+    },
+    "PENALTY": {
+      "precision": 0.6428571428571429,
+      "recall": 0.5294117647058824,
+      "f1": 0.5806451612903226,
+      "tp": 9,
+      "fp": 5,
+      "fn": 8,
+      "support": 17
+    },
+    "PERCENT": {
+      "precision": 0.42857142857142855,
+      "recall": 0.42857142857142855,
+      "f1": 0.42857142857142855,
+      "tp": 3,
+      "fp": 4,
+      "fn": 4,
+      "support": 7
+    },
+    "PERSON": {
+      "precision": 0.9799107142857143,
+      "recall": 0.9145833333333333,
+      "f1": 0.9461206896551724,
+      "tp": 878,
+      "fp": 18,
+      "fn": 82,
+      "support": 960
+    },
+    "PRODUCT": {
+      "precision": 0.5142857142857142,
+      "recall": 0.6792452830188679,
+      "f1": 0.5853658536585366,
+      "tp": 36,
+      "fp": 34,
+      "fn": 17,
+      "support": 53
+    },
+    "PROFESSION": {
+      "precision": 0.7991266375545851,
+      "recall": 0.6474056603773585,
+      "f1": 0.7153094462540717,
+      "tp": 549,
+      "fp": 138,
+      "fn": 299,
+      "support": 848
+    },
+    "RELIGION": {
+      "precision": 0.5,
+      "recall": 0.16666666666666666,
+      "f1": 0.25,
+      "tp": 4,
+      "fp": 4,
+      "fn": 20,
+      "support": 24
+    },
+    "STATE_OR_PROVINCE": {
+      "precision": 0.7575757575757576,
+      "recall": 0.46296296296296297,
+      "f1": 0.5747126436781609,
+      "tp": 50,
+      "fp": 16,
+      "fn": 58,
+      "support": 108
+    },
+    "TIME": {
+      "precision": 0.7,
+      "recall": 0.7446808510638298,
+      "f1": 0.7216494845360825,
+      "tp": 35,
+      "fp": 15,
+      "fn": 12,
+      "support": 47
+    },
+    "WORK_OF_ART": {
+      "precision": 0.8048780487804879,
+      "recall": 0.7096774193548387,
+      "f1": 0.7542857142857143,
+      "tp": 66,
+      "fp": 16,
+      "fn": 27,
+      "support": 93
+    }
+  },
+  "confusion": [
+    {
+      "gold": "AGE",
+      "pred": "AGE",
+      "count": 127
+    },
+    {
+      "gold": "AGE",
+      "pred": "DATE",
+      "count": 2
+    },
+    {
+      "gold": "AGE",
+      "pred": "не найдено",
+      "count": 9
+    },
+    {
+      "gold": "AWARD",
+      "pred": "AWARD",
+      "count": 88
+    },
+    {
+      "gold": "AWARD",
+      "pred": "EVENT",
+      "count": 3
+    },
+    {
+      "gold": "AWARD",
+      "pred": "ORGANIZATION",
+      "count": 1
+    },
+    {
+      "gold": "AWARD",
+      "pred": "не найдено",
+      "count": 27
+    },
+    {
+      "gold": "CITY",
+      "pred": "CITY",
+      "count": 182
+    },
+    {
+      "gold": "CITY",
+      "pred": "DISTRICT",
+      "count": 2
+    },
+    {
+      "gold": "CITY",
+      "pred": "EVENT",
+      "count": 1
+    },
+    {
+      "gold": "CITY",
+      "pred": "FACILITY",
+      "count": 2
+    },
+    {
+      "gold": "CITY",
+      "pred": "ORGANIZATION",
+      "count": 2
+    },
+    {
+      "gold": "CITY",
+      "pred": "STATE_OR_PROVINCE",
+      "count": 2
+    },
+    {
+      "gold": "CITY",
+      "pred": "не найдено",
+      "count": 48
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "AWARD",
+      "count": 1
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "COUNTRY",
+      "count": 232
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "CRIME",
+      "count": 1
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "EVENT",
+      "count": 2
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "LAW",
+      "count": 2
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "NATIONALITY",
+      "count": 16
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "ORGANIZATION",
+      "count": 3
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "PROFESSION",
+      "count": 1
+    },
+    {
+      "gold": "COUNTRY",
+      "pred": "не найдено",
+      "count": 189
+    },
+    {
+      "gold": "CRIME",
+      "pred": "CRIME",
+      "count": 27
+    },
+    {
+      "gold": "CRIME",
+      "pred": "EVENT",
+      "count": 1
+    },
+    {
+      "gold": "CRIME",
+      "pred": "LAW",
+      "count": 1
+    },
+    {
+      "gold": "CRIME",
+      "pred": "не найдено",
+      "count": 6
+    },
+    {
+      "gold": "DATE",
+      "pred": "AGE",
+      "count": 1
+    },
+    {
+      "gold": "DATE",
+      "pred": "DATE",
+      "count": 469
+    },
+    {
+      "gold": "DATE",
+      "pred": "EVENT",
+      "count": 2
+    },
+    {
+      "gold": "DATE",
+      "pred": "TIME",
+      "count": 3
+    },
+    {
+      "gold": "DATE",
+      "pred": "не найдено",
+      "count": 48
+    },
+    {
+      "gold": "DISEASE",
+      "pred": "DISEASE",
+      "count": 39
+    },
+    {
+      "gold": "DISEASE",
+      "pred": "EVENT",
+      "count": 4
+    },
+    {
+      "gold": "DISEASE",
+      "pred": "не найдено",
+      "count": 14
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "CITY",
+      "count": 3
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "DISTRICT",
+      "count": 4
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "FACILITY",
+      "count": 1
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "LOCATION",
+      "count": 3
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "ORGANIZATION",
+      "count": 1
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "STATE_OR_PROVINCE",
+      "count": 7
+    },
+    {
+      "gold": "DISTRICT",
+      "pred": "не найдено",
+      "count": 6
+    },
+    {
+      "gold": "EVENT",
+      "pred": "AWARD",
+      "count": 3
+    },
+    {
+      "gold": "EVENT",
+      "pred": "COUNTRY",
+      "count": 1
+    },
+    {
+      "gold": "EVENT",
+      "pred": "CRIME",
+      "count": 1
+    },
+    {
+      "gold": "EVENT",
+      "pred": "DATE",
+      "count": 5
+    },
+    {
+      "gold": "EVENT",
+      "pred": "DISEASE",
+      "count": 1
+    },
+    {
+      "gold": "EVENT",
+      "pred": "EVENT",
+      "count": 478
+    },
+    {
+      "gold": "EVENT",
+      "pred": "LAW",
+      "count": 3
+    },
+    {
+      "gold": "EVENT",
+      "pred": "NUMBER",
+      "count": 2
+    },
+    {
+      "gold": "EVENT",
+      "pred": "ORDINAL",
+      "count": 2
+    },
+    {
+      "gold": "EVENT",
+      "pred": "ORGANIZATION",
+      "count": 7
+    },
+    {
+      "gold": "EVENT",
+      "pred": "PERSON",
+      "count": 3
+    },
+    {
+      "gold": "EVENT",
+      "pred": "PROFESSION",
+      "count": 6
+    },
+    {
+      "gold": "EVENT",
+      "pred": "не найдено",
+      "count": 166
+    },
+    {
+      "gold": "FACILITY",
+      "pred": "CITY",
+      "count": 1
+    },
+    {
+      "gold": "FACILITY",
+      "pred": "FACILITY",
+      "count": 52
+    },
+    {
+      "gold": "FACILITY",
+      "pred": "ORGANIZATION",
+      "count": 8
+    },
+    {
+      "gold": "FACILITY",
+      "pred": "PRODUCT",
+      "count": 1
+    },
+    {
+      "gold": "FACILITY",
+      "pred": "не найдено",
+      "count": 2
+    },
+    {
+      "gold": "FAMILY",
+      "pred": "COUNTRY",
+      "count": 2
+    },
+    {
+      "gold": "FAMILY",
+      "pred": "FACILITY",
+      "count": 1
+    },
+    {
+      "gold": "FAMILY",
+      "pred": "ORGANIZATION",
+      "count": 1
+    },
+    {
+      "gold": "FAMILY",
+      "pred": "PERSON",
+      "count": 6
+    },
+    {
+      "gold": "FAMILY",
+      "pred": "PROFESSION",
+      "count": 1
+    },
+    {
+      "gold": "FAMILY",
+      "pred": "не найдено",
+      "count": 3
+    },
+    {
+      "gold": "IDEOLOGY",
+      "pred": "CRIME",
+      "count": 2
+    },
+    {
+      "gold": "IDEOLOGY",
+      "pred": "IDEOLOGY",
+      "count": 14
+    },
+    {
+      "gold": "IDEOLOGY",
+      "pred": "PROFESSION",
+      "count": 3
+    },
+    {
+      "gold": "IDEOLOGY",
+      "pred": "не найдено",
+      "count": 23
+    },
+    {
+      "gold": "LANGUAGE",
+      "pred": "COUNTRY",
+      "count": 1
+    },
+    {
+      "gold": "LANGUAGE",
+      "pred": "LANGUAGE",
+      "count": 4
+    },
+    {
+      "gold": "LANGUAGE",
+      "pred": "NATIONALITY",
+      "count": 1
+    },
+    {
+      "gold": "LANGUAGE",
+      "pred": "PRODUCT",
+      "count": 1
+    },
+    {
+      "gold": "LANGUAGE",
+      "pred": "не найдено",
+      "count": 1
+    },
+    {
+      "gold": "LAW",
+      "pred": "CRIME",
+      "count": 1
+    },
+    {
+      "gold": "LAW",
+      "pred": "LAW",
+      "count": 38
+    },
+    {
+      "gold": "LAW",
+      "pred": "не найдено",
+      "count": 18
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "CITY",
+      "count": 1
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "COUNTRY",
+      "count": 2
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "EVENT",
+      "count": 2
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "FACILITY",
+      "count": 2
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "LANGUAGE",
+      "count": 1
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "LOCATION",
+      "count": 21
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "RELIGION",
+      "count": 1
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "STATE_OR_PROVINCE",
+      "count": 3
+    },
+    {
+      "gold": "LOCATION",
+      "pred": "не найдено",
+      "count": 28
+    },
+    {
+      "gold": "MONEY",
+      "pred": "MONEY",
+      "count": 35
+    },
+    {
+      "gold": "MONEY",
+      "pred": "NUMBER",
+      "count": 1
+    },
+    {
+      "gold": "MONEY",
+      "pred": "PERSON",
+      "count": 1
+    },
+    {
+      "gold": "MONEY",
+      "pred": "PRODUCT",
+      "count": 4
+    },
+    {
+      "gold": "MONEY",
+      "pred": "не найдено",
+      "count": 2
+    },
+    {
+      "gold": "NATIONALITY",
+      "pred": "COUNTRY",
+      "count": 6
+    },
+    {
+      "gold": "NATIONALITY",
+      "pred": "NATIONALITY",
+      "count": 58
+    },
+    {
+      "gold": "NATIONALITY",
+      "pred": "не найдено",
+      "count": 2
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "AGE",
+      "count": 4
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "CRIME",
+      "count": 1
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "DATE",
+      "count": 8
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "DISEASE",
+      "count": 1
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "EVENT",
+      "count": 7
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "MONEY",
+      "count": 1
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "NUMBER",
+      "count": 163
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "PROFESSION",
+      "count": 1
+    },
+    {
+      "gold": "NUMBER",
+      "pred": "не найдено",
+      "count": 44
+    },
+    {
+      "gold": "ORDINAL",
+      "pred": "AGE",
+      "count": 2
+    },
+    {
+      "gold": "ORDINAL",
+      "pred": "LAW",
+      "count": 1
+    },
+    {
+      "gold": "ORDINAL",
+      "pred": "NUMBER",
+      "count": 3
+    },
+    {
+      "gold": "ORDINAL",
+      "pred": "ORDINAL",
+      "count": 62
+    },
+    {
+      "gold": "ORDINAL",
+      "pred": "PROFESSION",
+      "count": 1
+    },
+    {
+      "gold": "ORDINAL",
+      "pred": "не найдено",
+      "count": 36
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "AWARD",
+      "count": 1
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "CITY",
+      "count": 3
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "COUNTRY",
+      "count": 3
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "EVENT",
+      "count": 4
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "FACILITY",
+      "count": 5
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "LAW",
+      "count": 1
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "ORDINAL",
+      "count": 1
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "ORGANIZATION",
+      "count": 386
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "PERSON",
+      "count": 1
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "PRODUCT",
+      "count": 6
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "PROFESSION",
+      "count": 16
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "WORK_OF_ART",
+      "count": 5
+    },
+    {
+      "gold": "ORGANIZATION",
+      "pred": "не найдено",
+      "count": 237
+    },
+    {
+      "gold": "PENALTY",
+      "pred": "PENALTY",
+      "count": 10
+    },
+    {
+      "gold": "PENALTY",
+      "pred": "не найдено",
+      "count": 7
+    },
+    {
+      "gold": "PERCENT",
+      "pred": "PERCENT",
+      "count": 7
+    },
+    {
+      "gold": "PERSON",
+      "pred": "AWARD",
+      "count": 2
+    },
+    {
+      "gold": "PERSON",
+      "pred": "DATE",
+      "count": 1
+    },
+    {
+      "gold": "PERSON",
+      "pred": "FACILITY",
+      "count": 1
+    },
+    {
+      "gold": "PERSON",
+      "pred": "ORGANIZATION",
+      "count": 2
+    },
+    {
+      "gold": "PERSON",
+      "pred": "PERSON",
+      "count": 878
+    },
+    {
+      "gold": "PERSON",
+      "pred": "PRODUCT",
+      "count": 7
+    },
+    {
+      "gold": "PERSON",
+      "pred": "WORK_OF_ART",
+      "count": 1
+    },
+    {
+      "gold": "PERSON",
+      "pred": "не найдено",
+      "count": 68
+    },
+    {
+      "gold": "PRODUCT",
+      "pred": "LAW",
+      "count": 1
+    },
+    {
+      "gold": "PRODUCT",
+      "pred": "ORGANIZATION",
+      "count": 5
+    },
+    {
+      "gold": "PRODUCT",
+      "pred": "PRODUCT",
+      "count": 39
+    },
+    {
+      "gold": "PRODUCT",
+      "pred": "WORK_OF_ART",
+      "count": 1
+    },
+    {
+      "gold": "PRODUCT",
+      "pred": "не найдено",
+      "count": 7
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "COUNTRY",
+      "count": 1
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "CRIME",
+      "count": 1
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "EVENT",
+      "count": 2
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "NATIONALITY",
+      "count": 10
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "ORGANIZATION",
+      "count": 9
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "PERSON",
+      "count": 3
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "PRODUCT",
+      "count": 1
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "PROFESSION",
+      "count": 593
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "WORK_OF_ART",
+      "count": 2
+    },
+    {
+      "gold": "PROFESSION",
+      "pred": "не найдено",
+      "count": 226
+    },
+    {
+      "gold": "RELIGION",
+      "pred": "IDEOLOGY",
+      "count": 4
+    },
+    {
+      "gold": "RELIGION",
+      "pred": "NATIONALITY",
+      "count": 6
+    },
+    {
+      "gold": "RELIGION",
+      "pred": "PROFESSION",
+      "count": 1
+    },
+    {
+      "gold": "RELIGION",
+      "pred": "RELIGION",
+      "count": 5
+    },
+    {
+      "gold": "RELIGION",
+      "pred": "не найдено",
+      "count": 8
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "CITY",
+      "count": 3
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "COUNTRY",
+      "count": 5
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "LOCATION",
+      "count": 2
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "NATIONALITY",
+      "count": 2
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "ORGANIZATION",
+      "count": 1
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "STATE_OR_PROVINCE",
+      "count": 50
+    },
+    {
+      "gold": "STATE_OR_PROVINCE",
+      "pred": "не найдено",
+      "count": 45
+    },
+    {
+      "gold": "TIME",
+      "pred": "NUMBER",
+      "count": 1
+    },
+    {
+      "gold": "TIME",
+      "pred": "TIME",
+      "count": 41
+    },
+    {
+      "gold": "TIME",
+      "pred": "не найдено",
+      "count": 5
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "EVENT",
+      "count": 1
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "LAW",
+      "count": 4
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "ORGANIZATION",
+      "count": 4
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "PERSON",
+      "count": 2
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "PRODUCT",
+      "count": 2
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "PROFESSION",
+      "count": 1
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "WORK_OF_ART",
+      "count": 68
+    },
+    {
+      "gold": "WORK_OF_ART",
+      "pred": "не найдено",
+      "count": 11
+    },
+    {
+      "gold": "лишнее",
+      "pred": "AGE",
+      "count": 3
+    },
+    {
+      "gold": "лишнее",
+      "pred": "AWARD",
+      "count": 4
+    },
+    {
+      "gold": "лишнее",
+      "pred": "CITY",
+      "count": 3
+    },
+    {
+      "gold": "лишнее",
+      "pred": "COUNTRY",
+      "count": 1
+    },
+    {
+      "gold": "лишнее",
+      "pred": "CRIME",
+      "count": 24
+    },
+    {
+      "gold": "лишнее",
+      "pred": "DATE",
+      "count": 28
+    },
+    {
+      "gold": "лишнее",
+      "pred": "DISEASE",
+      "count": 15
+    },
+    {
+      "gold": "лишнее",
+      "pred": "DISTRICT",
+      "count": 2
+    },
+    {
+      "gold": "лишнее",
+      "pred": "EVENT",
+      "count": 194
+    },
+    {
+      "gold": "лишнее",
+      "pred": "FACILITY",
+      "count": 6
+    },
+    {
+      "gold": "лишнее",
+      "pred": "IDEOLOGY",
+      "count": 2
+    },
+    {
+      "gold": "лишнее",
+      "pred": "LAW",
+      "count": 9
+    },
+    {
+      "gold": "лишнее",
+      "pred": "LOCATION",
+      "count": 4
+    },
+    {
+      "gold": "лишнее",
+      "pred": "MONEY",
+      "count": 2
+    },
+    {
+      "gold": "лишнее",
+      "pred": "NATIONALITY",
+      "count": 11
+    },
+    {
+      "gold": "лишнее",
+      "pred": "NUMBER",
+      "count": 8
+    },
+    {
+      "gold": "лишнее",
+      "pred": "ORDINAL",
+      "count": 1
+    },
+    {
+      "gold": "лишнее",
+      "pred": "ORGANIZATION",
+      "count": 27
+    },
+    {
+      "gold": "лишнее",
+      "pred": "PENALTY",
+      "count": 4
+    },
+    {
+      "gold": "лишнее",
+      "pred": "PERSON",
+      "count": 2
+    },
+    {
+      "gold": "лишнее",
+      "pred": "PRODUCT",
+      "count": 9
+    },
+    {
+      "gold": "лишнее",
+      "pred": "PROFESSION",
+      "count": 63
+    },
+    {
+      "gold": "лишнее",
+      "pred": "RELIGION",
+      "count": 2
+    },
+    {
+      "gold": "лишнее",
+      "pred": "STATE_OR_PROVINCE",
+      "count": 4
+    },
+    {
+      "gold": "лишнее",
+      "pred": "TIME",
+      "count": 6
+    },
+    {
+      "gold": "лишнее",
+      "pred": "WORK_OF_ART",
+      "count": 5
+    }
+  ],
+  "error_kinds": {
+    "boundary": 305,
+    "tp": 3865,
+    "missed": 1286,
+    "spurious": 439,
+    "wrong_type": 173,
+    "boundary_and_type": 148
+  },
+  "nested": {
+    "continuous": 5810,
+    "within_level_removed": 33,
+    "dropped_annotations": 33,
+    "discontinuous": 17,
+    "flat_gold": 5777,
+    "relaxed_hits_on_continuous": 4250,
+    "relaxed_recall_on_continuous": 0.7314974182444062,
+    "strict_false_positives": 1003,
+    "false_positives_overlapping_dropped_annotation": 8
+  },
+  "per_level": {
+    "lvl_0": {
+      "precision": 0.7724137931034483,
+      "recall": 0.8254931714719271,
+      "f1": 0.7980718851514199,
+      "tp": 3808,
+      "fp": 1122,
+      "fn": 805
+    },
+    "lvl_1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 984
+    },
+    "lvl_2": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 180
+    }
+  },
+  "by_char_length": [
+    {
+      "precision": 0.8065187239944521,
+      "recall": 0.6916443651501636,
+      "f1": 0.7446774451736834,
+      "tp": 2326,
+      "fp": 558,
+      "fn": 1037,
+      "bucket": "6-15",
+      "support": 3363
+    },
+    {
+      "precision": 0.6851851851851852,
+      "recall": 0.4900662251655629,
+      "f1": 0.5714285714285714,
+      "tp": 74,
+      "fp": 34,
+      "fn": 77,
+      "bucket": "41+",
+      "support": 151
+    },
+    {
+      "precision": 0.7951807228915663,
+      "recall": 0.6875,
+      "f1": 0.7374301675977654,
+      "tp": 990,
+      "fp": 255,
+      "fn": 450,
+      "bucket": "16-40",
+      "support": 1440
+    },
+    {
+      "precision": 0.7748917748917749,
+      "recall": 0.6524908869987849,
+      "f1": 0.70844327176781,
+      "tp": 537,
+      "fp": 156,
+      "fn": 286,
+      "bucket": "1-5",
+      "support": 823
+    }
+  ],
+  "by_token_length": [
+    {
+      "precision": 0.8155339805825242,
+      "recall": 0.7056,
+      "f1": 0.7565944670812781,
+      "tp": 1764,
+      "fp": 399,
+      "fn": 736,
+      "bucket": "2-3 токена",
+      "support": 2500
+    },
+    {
+      "precision": 0.7740053050397878,
+      "recall": 0.6321490467937608,
+      "f1": 0.6959217743858812,
+      "tp": 1459,
+      "fp": 426,
+      "fn": 849,
+      "bucket": "1 токен",
+      "support": 2308
+    },
+    {
+      "precision": 0.7981859410430839,
+      "recall": 0.7265221878224974,
+      "f1": 0.7606699081577526,
+      "tp": 704,
+      "fp": 178,
+      "fn": 265,
+      "bucket": "4+ токена",
+      "support": 969
+    }
+  ],
+  "by_doc_length": [
+    {
+      "precision": 0.8114186851211073,
+      "recall": 0.7182235834609495,
+      "f1": 0.7619821283509343,
+      "tp": 469,
+      "fp": 109,
+      "fn": 184,
+      "bucket": "<1k",
+      "support": 653
+    },
+    {
+      "precision": 0.8018560321043391,
+      "recall": 0.6845824411134903,
+      "f1": 0.7385930460898693,
+      "tp": 3197,
+      "fp": 790,
+      "fn": 1473,
+      "bucket": "1k-3k",
+      "support": 4670
+    },
+    {
+      "precision": 0.8044692737430168,
+      "recall": 0.5625,
+      "f1": 0.6620689655172414,
+      "tp": 144,
+      "fp": 35,
+      "fn": 112,
+      "bucket": "3k-8k",
+      "support": 256
+    },
+    {
+      "precision": 0.6290322580645161,
+      "recall": 0.5909090909090909,
+      "f1": 0.609375,
+      "tp": 117,
+      "fp": 69,
+      "fn": 81,
+      "bucket": ">=8k",
+      "support": 198
+    }
+  ],
+  "documents": [
+    {
+      "id": "1130",
+      "strict_tp": 20,
+      "strict_fp": 3,
+      "strict_fn": 11
+    },
+    {
+      "id": "1135",
+      "strict_tp": 35,
+      "strict_fp": 4,
+      "strict_fn": 28
+    },
+    {
+      "id": "113534_text",
+      "strict_tp": 69,
+      "strict_fp": 16,
+      "strict_fn": 25
+    },
+    {
+      "id": "1136",
+      "strict_tp": 84,
+      "strict_fp": 19,
+      "strict_fn": 60
+    },
+    {
+      "id": "113627_text",
+      "strict_tp": 78,
+      "strict_fp": 13,
+      "strict_fn": 14
+    },
+    {
+      "id": "114619_text",
+      "strict_tp": 67,
+      "strict_fp": 9,
+      "strict_fn": 11
+    },
+    {
+      "id": "114891_text",
+      "strict_tp": 28,
+      "strict_fp": 12,
+      "strict_fn": 28
+    },
+    {
+      "id": "1155",
+      "strict_tp": 52,
+      "strict_fp": 6,
+      "strict_fn": 26
+    },
+    {
+      "id": "115778_text",
+      "strict_tp": 64,
+      "strict_fp": 14,
+      "strict_fn": 13
+    },
+    {
+      "id": "1160",
+      "strict_tp": 34,
+      "strict_fp": 3,
+      "strict_fn": 10
+    },
+    {
+      "id": "1167",
+      "strict_tp": 35,
+      "strict_fp": 7,
+      "strict_fn": 26
+    },
+    {
+      "id": "1177",
+      "strict_tp": 44,
+      "strict_fp": 3,
+      "strict_fn": 16
+    },
+    {
+      "id": "140608_text",
+      "strict_tp": 18,
+      "strict_fp": 15,
+      "strict_fn": 19
+    },
+    {
+      "id": "140635_text",
+      "strict_tp": 15,
+      "strict_fp": 11,
+      "strict_fn": 10
+    },
+    {
+      "id": "141500_text",
+      "strict_tp": 10,
+      "strict_fp": 4,
+      "strict_fn": 4
+    },
+    {
+      "id": "141989_text",
+      "strict_tp": 36,
+      "strict_fp": 14,
+      "strict_fn": 14
+    },
+    {
+      "id": "148588_text",
+      "strict_tp": 48,
+      "strict_fp": 8,
+      "strict_fn": 49
+    },
+    {
+      "id": "149501_text",
+      "strict_tp": 35,
+      "strict_fp": 13,
+      "strict_fn": 34
+    },
+    {
+      "id": "155032_text",
+      "strict_tp": 20,
+      "strict_fp": 5,
+      "strict_fn": 16
+    },
+    {
+      "id": "158591_text",
+      "strict_tp": 18,
+      "strict_fp": 4,
+      "strict_fn": 10
+    },
+    {
+      "id": "158993_text",
+      "strict_tp": 12,
+      "strict_fp": 4,
+      "strict_fn": 18
+    },
+    {
+      "id": "164261_text",
+      "strict_tp": 13,
+      "strict_fp": 7,
+      "strict_fn": 10
+    },
+    {
+      "id": "165459_text",
+      "strict_tp": 25,
+      "strict_fp": 11,
+      "strict_fn": 23
+    },
+    {
+      "id": "173578_text",
+      "strict_tp": 62,
+      "strict_fp": 28,
+      "strict_fn": 39
+    },
+    {
+      "id": "174168_text",
+      "strict_tp": 38,
+      "strict_fp": 10,
+      "strict_fn": 19
+    },
+    {
+      "id": "175232_text",
+      "strict_tp": 65,
+      "strict_fp": 7,
+      "strict_fn": 19
+    },
+    {
+      "id": "176167_text",
+      "strict_tp": 23,
+      "strict_fp": 10,
+      "strict_fn": 16
+    },
+    {
+      "id": "176967_text",
+      "strict_tp": 47,
+      "strict_fp": 13,
+      "strict_fn": 29
+    },
+    {
+      "id": "178485_text",
+      "strict_tp": 55,
+      "strict_fp": 16,
+      "strict_fn": 24
+    },
+    {
+      "id": "178520_text",
+      "strict_tp": 54,
+      "strict_fp": 15,
+      "strict_fn": 33
+    },
+    {
+      "id": "180710_text",
+      "strict_tp": 24,
+      "strict_fp": 5,
+      "strict_fn": 11
+    },
+    {
+      "id": "181855_text",
+      "strict_tp": 34,
+      "strict_fp": 7,
+      "strict_fn": 20
+    },
+    {
+      "id": "182652_text",
+      "strict_tp": 36,
+      "strict_fp": 4,
+      "strict_fn": 9
+    },
+    {
+      "id": "184456_text",
+      "strict_tp": 31,
+      "strict_fp": 9,
+      "strict_fn": 6
+    },
+    {
+      "id": "185911_text",
+      "strict_tp": 44,
+      "strict_fp": 17,
+      "strict_fn": 28
+    },
+    {
+      "id": "186842_text",
+      "strict_tp": 23,
+      "strict_fp": 8,
+      "strict_fn": 15
+    },
+    {
+      "id": "187083_text",
+      "strict_tp": 56,
+      "strict_fp": 15,
+      "strict_fn": 32
+    },
+    {
+      "id": "187337_text",
+      "strict_tp": 54,
+      "strict_fp": 12,
+      "strict_fn": 31
+    },
+    {
+      "id": "187498_text",
+      "strict_tp": 39,
+      "strict_fp": 6,
+      "strict_fn": 20
+    },
+    {
+      "id": "187827_text",
+      "strict_tp": 58,
+      "strict_fp": 10,
+      "strict_fn": 20
+    },
+    {
+      "id": "188551_text",
+      "strict_tp": 56,
+      "strict_fp": 16,
+      "strict_fn": 27
+    },
+    {
+      "id": "188872_text",
+      "strict_tp": 35,
+      "strict_fp": 12,
+      "strict_fn": 24
+    },
+    {
+      "id": "188878_text",
+      "strict_tp": 61,
+      "strict_fp": 14,
+      "strict_fn": 30
+    },
+    {
+      "id": "190892_text",
+      "strict_tp": 26,
+      "strict_fp": 7,
+      "strict_fn": 13
+    },
+    {
+      "id": "191113_text",
+      "strict_tp": 39,
+      "strict_fp": 16,
+      "strict_fn": 14
+    },
+    {
+      "id": "192213_text",
+      "strict_tp": 32,
+      "strict_fp": 9,
+      "strict_fn": 8
+    },
+    {
+      "id": "192238_text",
+      "strict_tp": 47,
+      "strict_fp": 10,
+      "strict_fn": 25
+    },
+    {
+      "id": "193248_text",
+      "strict_tp": 47,
+      "strict_fp": 5,
+      "strict_fn": 9
+    },
+    {
+      "id": "193252_text",
+      "strict_tp": 60,
+      "strict_fp": 20,
+      "strict_fn": 17
+    },
+    {
+      "id": "193267_text",
+      "strict_tp": 50,
+      "strict_fp": 13,
+      "strict_fn": 27
+    },
+    {
+      "id": "193946_text",
+      "strict_tp": 59,
+      "strict_fp": 13,
+      "strict_fn": 22
+    },
+    {
+      "id": "194023_text",
+      "strict_tp": 16,
+      "strict_fp": 2,
+      "strict_fn": 6
+    },
+    {
+      "id": "194112_text",
+      "strict_tp": 60,
+      "strict_fp": 16,
+      "strict_fn": 52
+    },
+    {
+      "id": "195702_text",
+      "strict_tp": 34,
+      "strict_fp": 2,
+      "strict_fn": 4
+    },
+    {
+      "id": "197647_text",
+      "strict_tp": 30,
+      "strict_fp": 9,
+      "strict_fn": 16
+    },
+    {
+      "id": "197654_text",
+      "strict_tp": 38,
+      "strict_fp": 5,
+      "strict_fn": 16
+    },
+    {
+      "id": "197667_text",
+      "strict_tp": 32,
+      "strict_fp": 8,
+      "strict_fn": 5
+    },
+    {
+      "id": "197682_text",
+      "strict_tp": 50,
+      "strict_fp": 1,
+      "strict_fn": 18
+    },
+    {
+      "id": "198350_text",
+      "strict_tp": 46,
+      "strict_fp": 11,
+      "strict_fn": 18
+    },
+    {
+      "id": "199861_text",
+      "strict_tp": 41,
+      "strict_fp": 15,
+      "strict_fn": 15
+    },
+    {
+      "id": "200333_text",
+      "strict_tp": 41,
+      "strict_fp": 16,
+      "strict_fn": 18
+    },
+    {
+      "id": "201695_text",
+      "strict_tp": 44,
+      "strict_fp": 9,
+      "strict_fn": 12
+    },
+    {
+      "id": "201822_text",
+      "strict_tp": 54,
+      "strict_fp": 7,
+      "strict_fn": 27
+    },
+    {
+      "id": "201920_text",
+      "strict_tp": 26,
+      "strict_fp": 14,
+      "strict_fn": 18
+    },
+    {
+      "id": "2021",
+      "strict_tp": 44,
+      "strict_fp": 20,
+      "strict_fn": 25
+    },
+    {
+      "id": "202294_text",
+      "strict_tp": 29,
+      "strict_fp": 8,
+      "strict_fn": 16
+    },
+    {
+      "id": "2027_",
+      "strict_tp": 117,
+      "strict_fp": 69,
+      "strict_fn": 81
+    },
+    {
+      "id": "2031",
+      "strict_tp": 30,
+      "strict_fp": 14,
+      "strict_fn": 10
+    },
+    {
+      "id": "204220_text",
+      "strict_tp": 53,
+      "strict_fp": 13,
+      "strict_fn": 34
+    },
+    {
+      "id": "207937_text",
+      "strict_tp": 46,
+      "strict_fp": 11,
+      "strict_fn": 22
+    },
+    {
+      "id": "208313_text",
+      "strict_tp": 34,
+      "strict_fp": 6,
+      "strict_fn": 14
+    },
+    {
+      "id": "208527_text",
+      "strict_tp": 38,
+      "strict_fp": 7,
+      "strict_fn": 10
+    },
+    {
+      "id": "208557_text",
+      "strict_tp": 53,
+      "strict_fp": 14,
+      "strict_fn": 31
+    },
+    {
+      "id": "208610_text",
+      "strict_tp": 51,
+      "strict_fp": 10,
+      "strict_fn": 24
+    },
+    {
+      "id": "209438_text",
+      "strict_tp": 56,
+      "strict_fp": 14,
+      "strict_fn": 23
+    },
+    {
+      "id": "209731_text",
+      "strict_tp": 30,
+      "strict_fp": 15,
+      "strict_fn": 20
+    },
+    {
+      "id": "210104_text",
+      "strict_tp": 38,
+      "strict_fp": 8,
+      "strict_fn": 7
+    },
+    {
+      "id": "210348_text",
+      "strict_tp": 75,
+      "strict_fp": 8,
+      "strict_fn": 23
+    },
+    {
+      "id": "538928_text",
+      "strict_tp": 63,
+      "strict_fp": 7,
+      "strict_fn": 12
+    },
+    {
+      "id": "539976_text",
+      "strict_tp": 37,
+      "strict_fp": 26,
+      "strict_fn": 24
+    },
+    {
+      "id": "543574_text",
+      "strict_tp": 48,
+      "strict_fp": 7,
+      "strict_fn": 10
+    },
+    {
+      "id": "545252_text",
+      "strict_tp": 54,
+      "strict_fp": 17,
+      "strict_fn": 11
+    },
+    {
+      "id": "545662_text",
+      "strict_tp": 44,
+      "strict_fp": 5,
+      "strict_fn": 15
+    },
+    {
+      "id": "545975_text",
+      "strict_tp": 22,
+      "strict_fp": 6,
+      "strict_fn": 8
+    },
+    {
+      "id": "546086_text",
+      "strict_tp": 32,
+      "strict_fp": 8,
+      "strict_fn": 18
+    },
+    {
+      "id": "546519_text",
+      "strict_tp": 52,
+      "strict_fp": 17,
+      "strict_fn": 46
+    },
+    {
+      "id": "546860_text",
+      "strict_tp": 44,
+      "strict_fp": 7,
+      "strict_fn": 24
+    },
+    {
+      "id": "547252_text",
+      "strict_tp": 58,
+      "strict_fp": 7,
+      "strict_fn": 7
+    },
+    {
+      "id": "547532_text",
+      "strict_tp": 18,
+      "strict_fp": 7,
+      "strict_fn": 12
+    },
+    {
+      "id": "547991_text",
+      "strict_tp": 24,
+      "strict_fp": 3,
+      "strict_fn": 2
+    },
+    {
+      "id": "548033_text",
+      "strict_tp": 35,
+      "strict_fp": 13,
+      "strict_fn": 15
+    },
+    {
+      "id": "548382_text",
+      "strict_tp": 33,
+      "strict_fp": 4,
+      "strict_fn": 5
+    },
+    {
+      "id": "548634_text",
+      "strict_tp": 42,
+      "strict_fp": 5,
+      "strict_fn": 14
+    }
+  ],
+  "efficiency": {
+    "parameters": 177398961,
+    "inference_seconds": 2.1392499429996406,
+    "peak_memory_bytes": 2454010368,
+    "documents": 93
+  },
+  "dataset": "/home/tuffi/Projects/nerel2/nerel/data/NEREL/NEREL-v1.1"
+}

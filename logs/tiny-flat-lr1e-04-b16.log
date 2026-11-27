@@ -1,0 +1,124 @@
+[1;91mE-001h rocSHMEM[0m Could not open libnuma. Returning	[90mNUMAWrapper@src/gda/numa_wrapper.cpp:48[0m
+Token indices sequence length is longer than the specified maximum sequence length for this model (2392 > 2048). Running this sequence through the model will result in indexing errors
+GPU: AMD Radeon RX 6900 XT
+Model: cointegrated/rubert-tiny2
+Levels: 3 ('внешний', 'внутри', 'глубже')
+Annotation mode: flat
+
+[TRAIN] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 35287
+  token_unaligned: 2
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 44740
+  selected_entities: 35289
+  within_level_removed: 9451
+  token_aligned: 35287
+  discontinuous: 127
+
+[DEV] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 4439
+  token_unaligned: 0
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 5583
+  selected_entities: 4439
+  within_level_removed: 1144
+  token_aligned: 4439
+  discontinuous: 7
+
+[TEST] PREPROCESSING
+  annotation_mode: flat
+  level_0_aligned: 4613
+  token_unaligned: 0
+  level_1_aligned: 0
+  level_2_aligned: 0
+  continuous_input: 5810
+  selected_entities: 4613
+  within_level_removed: 1197
+  token_aligned: 4613
+  discontinuous: 17
+
+[TRAIN] windows: 1336
+[TRAIN] entities fully present in >=1 window: 35287
+[TRAIN] entities not fully present in any window: 0
+Epoch 1 DEV: P=0.0000 R=0.0000 F1=0.0000 macro-F1=0.0000
+  lvl_0: F1=0.0000 P=0.0000 R=0.0000
+Epoch 1/18: loss=2.68953 dev_F1=0.0000
+Saved best checkpoint at epoch 1 (dev F1=0.0000)
+Epoch 2 DEV: P=0.2213 R=0.1453 F1=0.1754 macro-F1=0.0183
+  lvl_0: F1=0.1754 P=0.2213 R=0.1453
+Epoch 2/18: loss=0.72218 dev_F1=0.1754
+Saved best checkpoint at epoch 2 (dev F1=0.1754)
+Epoch 3 DEV: P=0.3810 R=0.3924 F1=0.3866 macro-F1=0.0919
+  lvl_0: F1=0.3866 P=0.3810 R=0.3924
+Epoch 3/18: loss=0.41026 dev_F1=0.3866
+Saved best checkpoint at epoch 3 (dev F1=0.3866)
+Epoch 4 DEV: P=0.4560 R=0.5326 F1=0.4913 macro-F1=0.1597
+  lvl_0: F1=0.4913 P=0.4560 R=0.5326
+Epoch 4/18: loss=0.28804 dev_F1=0.4913
+Saved best checkpoint at epoch 4 (dev F1=0.4913)
+Epoch 5 DEV: P=0.4742 R=0.5745 F1=0.5195 macro-F1=0.1948
+  lvl_0: F1=0.5195 P=0.4742 R=0.5745
+Epoch 5/18: loss=0.22111 dev_F1=0.5195
+Saved best checkpoint at epoch 5 (dev F1=0.5195)
+Epoch 6 DEV: P=0.4763 R=0.6058 F1=0.5333 macro-F1=0.2376
+  lvl_0: F1=0.5333 P=0.4763 R=0.6058
+Epoch 6/18: loss=0.17524 dev_F1=0.5333
+Saved best checkpoint at epoch 6 (dev F1=0.5333)
+Epoch 7 DEV: P=0.5010 R=0.6177 F1=0.5533 macro-F1=0.2766
+  lvl_0: F1=0.5533 P=0.5010 R=0.6177
+Epoch 7/18: loss=0.14369 dev_F1=0.5533
+Saved best checkpoint at epoch 7 (dev F1=0.5533)
+Epoch 8 DEV: P=0.5147 R=0.6278 F1=0.5657 macro-F1=0.3022
+  lvl_0: F1=0.5657 P=0.5147 R=0.6278
+Epoch 8/18: loss=0.11879 dev_F1=0.5657
+Saved best checkpoint at epoch 8 (dev F1=0.5657)
+Epoch 9 DEV: P=0.5293 R=0.6459 F1=0.5818 macro-F1=0.3356
+  lvl_0: F1=0.5818 P=0.5293 R=0.6459
+Epoch 9/18: loss=0.10164 dev_F1=0.5818
+Saved best checkpoint at epoch 9 (dev F1=0.5818)
+Epoch 10 DEV: P=0.5340 R=0.6495 F1=0.5861 macro-F1=0.3611
+  lvl_0: F1=0.5861 P=0.5340 R=0.6495
+Epoch 10/18: loss=0.08724 dev_F1=0.5861
+Saved best checkpoint at epoch 10 (dev F1=0.5861)
+Epoch 11 DEV: P=0.5451 R=0.6551 F1=0.5950 macro-F1=0.3819
+  lvl_0: F1=0.5950 P=0.5451 R=0.6551
+Epoch 11/18: loss=0.07713 dev_F1=0.5950
+Saved best checkpoint at epoch 11 (dev F1=0.5950)
+Epoch 12 DEV: P=0.5455 R=0.6556 F1=0.5955 macro-F1=0.3889
+  lvl_0: F1=0.5955 P=0.5455 R=0.6556
+Epoch 12/18: loss=0.06887 dev_F1=0.5955
+Saved best checkpoint at epoch 12 (dev F1=0.5955)
+Epoch 13 DEV: P=0.5447 R=0.6596 F1=0.5967 macro-F1=0.3934
+  lvl_0: F1=0.5967 P=0.5447 R=0.6596
+Epoch 13/18: loss=0.06348 dev_F1=0.5967
+Saved best checkpoint at epoch 13 (dev F1=0.5967)
+Epoch 14 DEV: P=0.5514 R=0.6637 F1=0.6023 macro-F1=0.4020
+  lvl_0: F1=0.6023 P=0.5514 R=0.6637
+Epoch 14/18: loss=0.05779 dev_F1=0.6023
+Saved best checkpoint at epoch 14 (dev F1=0.6023)
+Epoch 15 DEV: P=0.5513 R=0.6630 F1=0.6020 macro-F1=0.4036
+  lvl_0: F1=0.6020 P=0.5513 R=0.6630
+Epoch 15/18: loss=0.05442 dev_F1=0.6020
+Epoch 16 DEV: P=0.5499 R=0.6661 F1=0.6025 macro-F1=0.4161
+  lvl_0: F1=0.6025 P=0.5499 R=0.6661
+Epoch 16/18: loss=0.05154 dev_F1=0.6025
+Saved best checkpoint at epoch 16 (dev F1=0.6025)
+Epoch 17 DEV: P=0.5521 R=0.6643 F1=0.6031 macro-F1=0.4184
+  lvl_0: F1=0.6031 P=0.5521 R=0.6643
+Epoch 17/18: loss=0.04965 dev_F1=0.6031
+Saved best checkpoint at epoch 17 (dev F1=0.6031)
+Epoch 18 DEV: P=0.5533 R=0.6639 F1=0.6036 macro-F1=0.4188
+  lvl_0: F1=0.6036 P=0.5533 R=0.6639
+Epoch 18/18: loss=0.04901 dev_F1=0.6036
+Saved best checkpoint at epoch 18 (dev F1=0.6036)
+
+Best epoch: 18; best DEV F1: 0.6036
+Best macro epoch: 18; best DEV macro F1: 0.4188
+Optimizer updates: 1512; skipped due to AMP overflow: 0
+
+TEST EVALUATION SKIPPED
+Checkpoint: /home/tuffi/Projects/nerel/checkpoints/tiny-flat-lr1e-04-b16

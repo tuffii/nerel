@@ -1,0 +1,125 @@
+[1;91mE-001h rocSHMEM[0m Could not open libnuma. Returning	[90mNUMAWrapper@src/gda/numa_wrapper.cpp:48[0m
+Token indices sequence length is longer than the specified maximum sequence length for this model (2392 > 2048). Running this sequence through the model will result in indexing errors
+GPU: AMD Radeon RX 6900 XT
+Model: cointegrated/rubert-tiny2
+Levels: 3 ('внешний', 'внутри', 'глубже')
+Annotation mode: nested
+
+[TRAIN] PREPROCESSING
+  annotation_mode: nested
+  level_0_aligned: 35286
+  token_unaligned: 4
+  level_1_aligned: 7860
+  level_2_aligned: 1266
+  continuous_input: 44740
+  selected_entities: 44416
+  within_level_removed: 324
+  token_aligned: 44412
+  discontinuous: 127
+
+[DEV] PREPROCESSING
+  annotation_mode: nested
+  level_0_aligned: 4439
+  token_unaligned: 0
+  level_1_aligned: 954
+  level_2_aligned: 154
+  continuous_input: 5583
+  selected_entities: 5547
+  within_level_removed: 36
+  token_aligned: 5547
+  discontinuous: 7
+
+[TEST] PREPROCESSING
+  annotation_mode: nested
+  level_0_aligned: 4613
+  token_unaligned: 0
+  level_1_aligned: 984
+  level_2_aligned: 180
+  continuous_input: 5810
+  selected_entities: 5777
+  within_level_removed: 33
+  token_aligned: 5777
+  discontinuous: 17
+
+[TRAIN] windows: 1336
+[TRAIN] entities fully present in >=1 window: 44412
+[TRAIN] entities not fully present in any window: 0
+Epoch 1 DEV: P=0.0000 R=0.0000 F1=0.0000 macro-F1=0.0000
+  lvl_0: F1=0.0000 P=0.0000 R=0.0000
+  lvl_1: F1=0.0000 P=0.0000 R=0.0000
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 1/12: loss=3.06815 dev_F1=0.0000
+Saved best checkpoint at epoch 1 (dev F1=0.0000)
+Epoch 2 DEV: P=0.2062 R=0.0681 F1=0.1024 macro-F1=0.0094
+  lvl_0: F1=0.1129 P=0.1931 R=0.0797
+  lvl_1: F1=0.0000 P=0.0000 R=0.0000
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 2/12: loss=1.09634 dev_F1=0.1024
+Saved best checkpoint at epoch 2 (dev F1=0.1024)
+Epoch 3 DEV: P=0.1765 R=0.1082 F1=0.1341 macro-F1=0.0139
+  lvl_0: F1=0.1424 P=0.1642 R=0.1257
+  lvl_1: F1=0.0000 P=0.0000 R=0.0000
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 3/12: loss=0.74400 dev_F1=0.1341
+Saved best checkpoint at epoch 3 (dev F1=0.1341)
+Epoch 4 DEV: P=0.3327 R=0.2333 F1=0.2743 macro-F1=0.0430
+  lvl_0: F1=0.2827 P=0.3026 R=0.2651
+  lvl_1: F1=0.0000 P=0.0000 R=0.0000
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 4/12: loss=0.63265 dev_F1=0.2743
+Saved best checkpoint at epoch 4 (dev F1=0.2743)
+Epoch 5 DEV: P=0.3532 R=0.2796 F1=0.3121 macro-F1=0.0514
+  lvl_0: F1=0.3223 P=0.3241 R=0.3206
+  lvl_1: F1=0.0000 P=0.0000 R=0.0000
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 5/12: loss=0.55822 dev_F1=0.3121
+Saved best checkpoint at epoch 5 (dev F1=0.3121)
+Epoch 6 DEV: P=0.3479 R=0.2991 F1=0.3216 macro-F1=0.0610
+  lvl_0: F1=0.3320 P=0.3211 R=0.3435
+  lvl_1: F1=0.0021 P=0.0500 R=0.0010
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 6/12: loss=0.51240 dev_F1=0.3216
+Saved best checkpoint at epoch 6 (dev F1=0.3216)
+Epoch 7 DEV: P=0.3828 R=0.3369 F1=0.3584 macro-F1=0.0895
+  lvl_0: F1=0.3676 P=0.3527 R=0.3839
+  lvl_1: F1=0.0159 P=0.1569 R=0.0084
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 7/12: loss=0.47923 dev_F1=0.3584
+Saved best checkpoint at epoch 7 (dev F1=0.3584)
+Epoch 8 DEV: P=0.4108 R=0.3820 F1=0.3959 macro-F1=0.1078
+  lvl_0: F1=0.4001 P=0.3764 R=0.4269
+  lvl_1: F1=0.0778 P=0.3333 R=0.0440
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 8/12: loss=0.45540 dev_F1=0.3959
+Saved best checkpoint at epoch 8 (dev F1=0.3959)
+Epoch 9 DEV: P=0.4269 R=0.3990 F1=0.4124 macro-F1=0.1160
+  lvl_0: F1=0.4134 P=0.3888 R=0.4413
+  lvl_1: F1=0.1108 P=0.4150 R=0.0639
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 9/12: loss=0.43795 dev_F1=0.4124
+Saved best checkpoint at epoch 9 (dev F1=0.4124)
+Epoch 10 DEV: P=0.4337 R=0.4110 F1=0.4221 macro-F1=0.1214
+  lvl_0: F1=0.4202 P=0.3930 R=0.4515
+  lvl_1: F1=0.1167 P=0.4062 R=0.0681
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 10/12: loss=0.42534 dev_F1=0.4221
+Saved best checkpoint at epoch 10 (dev F1=0.4221)
+Epoch 11 DEV: P=0.4378 R=0.4206 F1=0.4290 macro-F1=0.1250
+  lvl_0: F1=0.4269 P=0.3980 R=0.4602
+  lvl_1: F1=0.1317 P=0.3800 R=0.0797
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 11/12: loss=0.41683 dev_F1=0.4290
+Saved best checkpoint at epoch 11 (dev F1=0.4290)
+Epoch 12 DEV: P=0.4356 R=0.4238 F1=0.4296 macro-F1=0.1269
+  lvl_0: F1=0.4262 P=0.3950 R=0.4627
+  lvl_1: F1=0.1366 P=0.3892 R=0.0828
+  lvl_2: F1=0.0000 P=0.0000 R=0.0000
+Epoch 12/12: loss=0.41309 dev_F1=0.4296
+Saved best checkpoint at epoch 12 (dev F1=0.4296)
+
+Best epoch: 12; best DEV F1: 0.4296
+Best macro epoch: 12; best DEV macro F1: 0.1269
+Optimizer updates: 2004; skipped due to AMP overflow: 0
+
+TEST EVALUATION SKIPPED
+Checkpoint: /home/tuffi/Projects/nerel/checkpoints/ruBERT-tiny2-вложенный

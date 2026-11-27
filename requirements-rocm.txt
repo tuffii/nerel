@@ -1,0 +1,22 @@
+# Do not install this stack from PyPI.
+# PyPI torch is not the ROCm build used here.
+#
+# RX 6900 XT is gfx1030. From a clean venv on Python 3.13:
+#
+# python -m pip install --index-url https://repo.amd.com/rocm/whl-multi-arch/ \
+#   "rocm[libraries,device-gfx1030]==7.14.1" \
+#   "torch[device-gfx1030]==2.12.0+rocm7.14.1"
+#
+# The working environment resolved to:
+#   torch==2.12.0+rocm7.14.1
+#   amd-torch-device-gfx1030==2.12.0+rocm7.14.1
+#   rocm==7.14.1
+#   rocm-sdk-core==7.14.1
+#   rocm-sdk-libraries==7.14.1
+#   rocm-sdk-device-gfx1030==7.14.1
+#   triton==3.8.0+git4cff872c.rocm7.14.1
+#
+# torchvision and torchaudio are not required for this project.
+# After PyTorch imports, cuda:0 must be AMD Radeon RX 6900 XT.
+# Index: https://repo.amd.com/rocm/whl-multi-arch/
+# Docs: https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html

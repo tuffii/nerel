@@ -1,0 +1,22 @@
+{
+  "model": "cointegrated/rubert-tiny2",
+  "dataset": "/home/tuffi/Projects/nerel/data/NEREL/NEREL-v1.1",
+  "epochs": 18,
+  "learning_rate": 5e-05,
+  "batch_size": 16,
+  "max_length": 256,
+  "stride": 64,
+  "seed": 42,
+  "loss": "ce",
+  "num_levels": 3,
+  "level_names": [
+    "lvl_0",
+    "lvl_1",
+    "lvl_2"
+  ],
+  "annotation_mode": "flat",
+  "task": "flat BIO on the outer layer; nested mentions are not supervised",
+  "gpu": "AMD Radeon RX 6900 XT",
+  "pytorch": "2.12.0+rocm7.14.1",
+  "hip": "7.14.60850"
+}
